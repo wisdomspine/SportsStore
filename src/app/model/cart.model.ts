@@ -50,7 +50,7 @@ export class Cart {
         });
     }
 
-    private findLine(product: Product) {
+    public findLine(product: Product) {
         // tslint:disable: triple-equals
         const line = this.lines.find(l => l.product.id == product.id);
         return line == undefined ? undefined : line;

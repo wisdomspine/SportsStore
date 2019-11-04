@@ -11,6 +11,9 @@
             <button *ngFor="let cat of categories" class="btn btn-outline-primary btn-block" [class.active]="cat==selectedCategory" (click)="changeCategory(cat)">
                 {{cat}}
             </button>
+            <button class="btn btn-block btn-danger m-t-3" routerLink="/admin">
+                Admin
+            </button>
         </div>
         <div class="col-9 p-2">
             <div *ngFor="let product of products; let i=index" class="card m-1 p-1 bg-light">
@@ -22,8 +25,11 @@
                 </h4>
                 <div class="card-text bg-white p-1 text-dark">
                     {{product.description}}
-                    <button class="btn btn-success btn-sm float-right" (click)="addProductToCart(product)">
+                    <button *ngIf="!isProductInCart(product)" class="btn btn-success btn-sm float-right" (click)="addProductToCart(product)">
                         Add to Cart
+                    </button>
+                    <button *ngIf="isProductInCart(product)" class="btn btn-danger btn-sm float-right" (click)="removeProductFromCart(product)">
+                        Remove from cart
                     </button>
                 </div>
             </div>

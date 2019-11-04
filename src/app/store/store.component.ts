@@ -1,8 +1,8 @@
 import { Component  } from '@angular/core';
 import { Product } from '../model/product.model';
 import { ProductRepository } from '../model/product.repository';
-import { Cart } from "../model/cart.model";
-import { Router } from "@angular/router";
+import { Cart } from '../model/cart.model';
+import { Router } from '@angular/router';
 
 @Component({
     // tslint:disable-next-line: component-selector
@@ -51,8 +51,16 @@ export class StoreComponent {
     }
     */
 
-    addProductToCart(product: Product){
+    addProductToCart(product: Product) {
         this.cart.addLine(product);
-        this.router.navigateByUrl("/cart");
+        this.router.navigateByUrl('/cart');
+    }
+
+    removeProductFromCart(product: Product) {
+        this.cart.removeLine(product.id);
+    }
+
+    isProductInCart(product: Product) {
+        return this.cart.findLine(product);
     }
 }
