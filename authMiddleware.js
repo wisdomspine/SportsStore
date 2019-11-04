@@ -6,7 +6,6 @@ const USERNAME = "admin";
 const PASSWORD = "secret";
 
 module.exports = function (req, res, next) {
-    
     if (/^(\/api)?\/login/.test(req.url) && req.method == "POST") {
         if (req.body != null && req.body.name == USERNAME 
                 && req.body.password == PASSWORD) {
@@ -21,8 +20,7 @@ module.exports = function (req, res, next) {
         || (/^(\/api)?\/orders/.test(req.url) && req.method != "POST")) {
         let token = req.headers["authorization"];
         if (token != null && token.startsWith("Bearer<")) {
-            console.log(req.headers["authorization"])
-            token = token.substring(7, token.length - 1);
+            token = token.substring(7, token.length);
             try {
                 jwt.verify(token, APP_SECRET);
                 next();

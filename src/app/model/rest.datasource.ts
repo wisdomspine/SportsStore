@@ -13,6 +13,7 @@ const PORT = 3500;
 @Injectable()
 export class RestDataSource {
     baseUrl: string;
+    // tslint:disable-next-line: variable-name
     auth_token: string;
 
     constructor(private http: HttpClient) {
@@ -41,7 +42,7 @@ export class RestDataSource {
     }
 
     updateProduct(product: Product): Observable<Product> {
-        return this.http.put<Product>(`${this.baseUrl}products`, product, this.getOptions());
+        return this.http.put<Product>(`${this.baseUrl}products/${product.id}`, product, this.getOptions());
     }
 
     deleteProduct(id: number | string): Observable<Product> {
@@ -58,7 +59,7 @@ export class RestDataSource {
     }
 
     updateOrder(order: Order): Observable<Order> {
-        return this.http.put<Order>(`${this.baseUrl}orders`, order, this.getOptions());
+        return this.http.put<Order>(`${this.baseUrl}orders/${order.id}`, order, this.getOptions());
     }
 
     private getOptions() {

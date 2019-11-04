@@ -31,13 +31,16 @@ export class OrderRepository {
     }
 
     updateOrder(order: Order) {
+        // tslint:disable-next-line: no-shadowed-variable
         this.dataSource.updateOrder(order).subscribe(order => {
+            // tslint:disable-next-line: triple-equals
             this.orders.splice(this.orders.findIndex(o => o.id == order.id), 1, order);
         });
     }
 
     deleteOrder(id: number | any) {
         this.dataSource.deleteOrder(id).subscribe(order => {
+            // tslint:disable-next-line: triple-equals
             this.orders.splice(this.orders.findIndex(o => o.id == id), 1);
         });
     }

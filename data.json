@@ -31,12 +31,6 @@
       "price": "699.51"
     },
     {
-      "id": 37469855,
-      "name": "Cheese",
-      "category": "Soccer",
-      "price": "875.61"
-    },
-    {
       "id": 88054710,
       "name": "Shirt",
       "category": "Watersports",
@@ -175,86 +169,19 @@
       "price": "841.64"
     },
     {
-      "id": 93005435,
-      "name": "Shoes",
-      "category": "Soccer",
-      "price": "91.67"
+      "name": "Ball",
+      "category": "Hand games",
+      "price": "340",
+      "id": 94717789
     },
     {
-      "id": 26137415,
-      "name": "Soap",
-      "category": "Chess",
-      "price": "587.29"
+      "name": "King's Deck",
+      "category": "Clean",
+      "price": "428.24",
+      "id": 94717790
     }
   ],
   "orders": [
-    {
-      "cart": {
-        "lines": [
-          {
-            "product": {
-              "id": 45032415,
-              "name": "Bike",
-              "category": "Watersports",
-              "price": "428.24"
-            },
-            "quantity": 1
-          },
-          {
-            "product": {
-              "id": 94303810,
-              "name": "Salad",
-              "category": "Soccer",
-              "price": "987.90"
-            },
-            "quantity": 1
-          }
-        ],
-        "itemCount": 2,
-        "cartPrice": 1416.1399999999999
-      },
-      "shipped": false,
-      "name": "Ombugadu Priest Sabo",
-      "city": "Lafia",
-      "state": "Nasarawa",
-      "zip": "965101",
-      "country": "Nigeria",
-      "id": 1
-    },
-    {
-      "cart": {
-        "lines": [
-          {
-            "product": {
-              "id": 69570203,
-              "name": "Chair",
-              "category": "Soccer",
-              "price": "579.07"
-            },
-            "quantity": 6
-          },
-          {
-            "product": {
-              "id": 94303810,
-              "name": "Salad",
-              "category": "Soccer",
-              "price": "987.90"
-            },
-            "quantity": 4
-          }
-        ],
-        "itemCount": 10,
-        "cartPrice": 7426.02
-      },
-      "shipped": false,
-      "name": "Ombugadu Priest Sabo",
-      "city": "Lafia",
-      "state": "Nasarawa",
-      "zip": "965101",
-      "country": "Nigeria",
-      "id": 2,
-      "address": null
-    },
     {
       "cart": {
         "lines": [
@@ -280,7 +207,7 @@
         "itemCount": 2,
         "cartPrice": 796.94
       },
-      "shipped": false,
+      "shipped": true,
       "name": "Ombugadu Priest Sabo",
       "city": "Lafia",
       "state": "Nasarawa",
@@ -304,7 +231,7 @@
         "itemCount": 1,
         "cartPrice": 987.9
       },
-      "shipped": false,
+      "shipped": true,
       "name": "Ombugadu Priest Sabo",
       "city": "Lafia",
       "state": "Nasarawa",
@@ -346,7 +273,7 @@
         "itemCount": 7,
         "cartPrice": 3414.2200000000003
       },
-      "shipped": false,
+      "shipped": true,
       "name": "Ombugadu Priest Sabo",
       "city": "Lafia",
       "state": "Nasarawa",
@@ -354,6 +281,30 @@
       "country": "Nigeria",
       "id": 5,
       "address": null
+    },
+    {
+      "cart": {
+        "lines": [
+          {
+            "product": {
+              "id": 45032415,
+              "name": "Bike",
+              "category": "Watersports",
+              "price": "428.24"
+            },
+            "quantity": 98
+          }
+        ],
+        "itemCount": 98,
+        "cartPrice": 41967.520000000004
+      },
+      "shipped": false,
+      "name": "Ombugadu Priest Sabo",
+      "city": "Lafia",
+      "state": "Nasarawa",
+      "zip": "965101",
+      "country": "Nigeria",
+      "id": 7
     }
   ]
 }
