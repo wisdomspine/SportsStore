@@ -10,8 +10,8 @@
     "e2e": "ng e2e",
     "generate-json": "npx babel-node ./buildScripts/generateData.js",
     "json": "json-server data.json -p 3500 -m authMiddleware.js",
-    "json-watch":"npm run json -- --watch",
-    "lt":"lt -p 3000 -s spinneret"
+    "json-watch": "npm run json -- --watch",
+    "lt": "lt -p 3000 -s spinneret"
   },
   "private": true,
   "dependencies": {
@@ -22,7 +22,9 @@
     "@angular/forms": "~8.2.13",
     "@angular/platform-browser": "~8.2.13",
     "@angular/platform-browser-dynamic": "~8.2.13",
+    "@angular/pwa": "^0.803.17",
     "@angular/router": "~8.2.13",
+    "@angular/service-worker": "~8.2.13",
     "bootstrap": "^4.3.1",
     "faker": "^4.1.0",
     "font-awesome": "^4.7.0",
