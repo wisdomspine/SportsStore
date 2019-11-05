@@ -6,7 +6,7 @@ import { createHostListener } from '@angular/compiler/src/core';
 @Injectable()
 export class Cart {
     public lines: CartLine[] = [];
-    public itemCount = 0;
+    public itemCount: number = 0;
     public cartPrice = 0;
 
     addLine(product: Product, quantity: number= 1) {
