@@ -57,8 +57,8 @@
     <div class="row">
         <div class="text-center">
             <button class="btn btn-primary m-1" routerLink="/store">Continue Shopping</button>
-            <button class="btn btn-secondary m-1" routerLink="/checkout" [disabled]="cart.lines.length == 0">
-                Checkout
+            <button class="btn btn-secondary m-1" routerLink="/checkout" [disabled]="cart.lines.length == 0 || !connected" [class.btn-success]= "cart.lines.length != 0 && connected" >
+                {{ connected ? "Checkout" : "Offline"}}
             </button>
         </div>
     </div>
