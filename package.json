@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 3000 --open",
-    "build": "ng build",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -12,7 +12,7 @@
     "json": "json-server data.json -p 3500 -m authMiddleware.js",
     "json-watch": "npm run json -- --watch",
     "lt": "lt -p 3000 -s spinneret",
-    "start-dist":"babel-node server.js"
+    "start-dist":"node server.js"
   },
   "private": true,
   "dependencies": {
