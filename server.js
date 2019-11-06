@@ -1,11 +1,11 @@
-import express from "express";
-import https from "https";
-import fs from "fs";
-import history from "connect-history-api-fallback";
-import jsonServer from "json-server";
-import bodyParser from "body-parser";
-import auth from "./authMiddleware";
-import process from "process";
+const express =require( "express");
+const https =require( "https");
+const fs =require( "fs");
+const history =require( "connect-history-api-fallback");
+const jsonServer =require( "json-server");
+const bodyParser =require( "body-parser");
+const auth =require( "./authMiddleware");
+const process =require( "process");
 
 const router= jsonServer.router("data.json");
 
