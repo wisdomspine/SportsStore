@@ -1,1 +1,1 @@
-web: babel-node start-dist
+web: node server.js
