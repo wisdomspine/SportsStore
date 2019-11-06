@@ -11,7 +11,8 @@
     "generate-json": "npx babel-node ./buildScripts/generateData.js",
     "json": "json-server data.json -p 3500 -m authMiddleware.js",
     "json-watch": "npm run json -- --watch",
-    "lt": "lt -p 3000 -s spinneret"
+    "lt": "lt -p 3000 -s spinneret",
+    "start-dist":"babel-node server.js"
   },
   "private": true,
   "dependencies": {

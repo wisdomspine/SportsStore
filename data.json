@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 45032415,
-      "name": "Winlos",
+      "name": "Winlos holy",
       "category": "Watersports",
       "price": "428.24"
     },
@@ -179,6 +179,12 @@
       "category": "Clean",
       "price": "428.24",
       "id": 94717790
+    },
+    {
+      "name": "Card",
+      "category": "Card",
+      "price": "10",
+      "id": 94717791
     }
   ],
   "orders": [
@@ -287,24 +293,33 @@
         "lines": [
           {
             "product": {
+              "id": 91209005,
+              "name": "Bacon",
+              "category": "Watersports",
+              "price": "841.64"
+            },
+            "quantity": 2
+          },
+          {
+            "product": {
               "id": 45032415,
-              "name": "Bike",
+              "name": "Winlos holy",
               "category": "Watersports",
               "price": "428.24"
             },
-            "quantity": 98
+            "quantity": 1
           }
         ],
-        "itemCount": 98,
-        "cartPrice": 41967.520000000004
+        "itemCount": 3,
+        "cartPrice": 2111.52
       },
-      "shipped": false,
-      "name": "Ombugadu Priest Sabo",
+      "shipped": true,
+      "name": "Ombugadu AnnaSabo",
       "city": "Lafia",
       "state": "Nasarawa",
       "zip": "965101",
       "country": "Nigeria",
-      "id": 7
+      "id": 8
     }
   ]
 }
